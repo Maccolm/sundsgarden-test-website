@@ -31,7 +31,6 @@
 
 .icon-facebook:before {
   content: "\e902";
-  color: #e8e8e8;
 }
 
 .icon-linkendin:before {
@@ -40,15 +39,12 @@
 
 .icon-pinterest:before {
   content: "\e904";
-  color: #e8e8e8;
 }
 
 .icon-twitter:before {
   content: "\e905";
-  color: #e8e8e8;
 }
 
 .icon-youtube:before {
   content: "\e906";
-  color: #e8e8e8;
 }

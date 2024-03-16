@@ -165,7 +165,6 @@ h2 {
 
 .icon-facebook:before {
   content: "\e902";
-  color: #e8e8e8;
 }
 
 .icon-linkendin:before {
@@ -174,17 +173,14 @@ h2 {
 
 .icon-pinterest:before {
   content: "\e904";
-  color: #e8e8e8;
 }
 
 .icon-twitter:before {
   content: "\e905";
-  color: #e8e8e8;
 }
 
 .icon-youtube:before {
   content: "\e906";
-  color: #e8e8e8;
 }
 
 @keyframes moving {
@@ -807,4 +803,45 @@ input:checked.menu__body {
   font-size: 50px;
   color: #496BFE;
   letter-spacing: 5px;
+}
+
+.footer {
+  height: clamp(13.375rem, 12.042rem + 6.67vw, 16.875rem);
+  background-color: #232323;
+  padding: 55px 0;
+}
+.footer__container {
+  height: 100%;
+}
+.footer__box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.footer__logo {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 3.36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.footer__text {
+  font-size: 16px;
+  line-height: 1.625;
+  margin-bottom: 20px;
+  letter-spacing: 1.6px;
+}
+
+.navigation-footer__list {
+  display: flex;
+  gap: 25px;
+}
+.navigation-footer__link {
+  transition: 0.3s ease-out 0s;
+  font-size: 14px;
+}
+.navigation-footer__link:hover {
+  color: #496BFE;
 }

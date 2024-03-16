@@ -608,3 +608,47 @@ input:checked.menu__body{
 	color: $darkBlue;
 	letter-spacing: 5px;
 }
+//footer=====================================================================================
+.footer {
+	height: clamp(13.375rem, 12.042rem + 6.67vw, 16.875rem);
+	background-color: #232323;
+	padding: 55px 0;
+  &__container {
+	height: 100%;
+}
+&__box {
+ 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
+  }
+  &__logo {
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 3.36px;
+	font-weight: 700;
+	margin-bottom: 8px;
+  }
+  &__text {
+	font-size: 16px;
+	line-height: 1.625;
+	margin-bottom: 20px;
+	letter-spacing: 1.6px;
+  }
+}
+.navigation-footer {
+  &__list {
+	display: flex;
+	gap: 25px;
+}
+&__item {
+}
+&__link {
+	transition: 0.3s ease-out 0s;
+	font-size: 14px;
+	&:hover{
+		color: $darkBlue;
+	}
+  }
+}
