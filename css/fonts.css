@@ -1,7 +1,7 @@
 @font-face {
   font-family: "icons";
-  src: url("../../fonts/icons.eot?fzznl7");
-  src: url("../../fonts/icons.eot?fzznl7#iefix") format("embedded-opentype"), url("../../fonts/icons.ttf?fzznl7") format("truetype"), url("../../fonts/icons.woff?fzznl7") format("woff"), url("../../fonts/icons.svg?fzznl7#icons") format("svg");
+  src: url("../../fonts/icons.eot?48gjzo");
+  src: url("../../fonts/icons.eot?48gjzo#iefix") format("embedded-opentype"), url("../../fonts/icons.ttf?48gjzo") format("truetype"), url("../../fonts/icons.woff?48gjzo") format("woff"), url("../../fonts/icons.svg?48gjzo#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -20,30 +20,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-quote-left:before {
+.icon-scope:before {
   content: "\e900";
+  color: #fff;
+}
+
+.icon-quote-left:before {
+  content: "\e901";
 }
 
 .icon-facebook:before {
-  content: "\e901";
+  content: "\e902";
   color: #e8e8e8;
 }
 
 .icon-linkendin:before {
-  content: "\e902";
+  content: "\e903";
 }
 
 .icon-pinterest:before {
-  content: "\e903";
-  color: #e8e8e8;
-}
-
-.icon-twitter:before {
   content: "\e904";
   color: #e8e8e8;
 }
 
-.icon-youtube:before {
+.icon-twitter:before {
   content: "\e905";
+  color: #e8e8e8;
+}
+
+.icon-youtube:before {
+  content: "\e906";
   color: #e8e8e8;
 }
