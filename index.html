@@ -9,7 +9,7 @@
 <body>
 	<div class="wrapper">
 		<main class="main">
-			<section class="landing page">
+			<section id="landing" class="landing page">
 				<div class="landing__container content-landing">
 					<div class="content-landing__title">
 						<h1 class="content-landing__title-h1">
@@ -19,10 +19,12 @@
 							Safe Travel Anywhere
 						</h2>
 					</div>
-					<div class="content-landing__search">
-						<input type="text" class="input-search" placeholder="Search Your Travel Destination">
-						<button type="button" class="btn ">search<i class="icon-scope"></i></button>
-					</div>
+					<form action="#" class="form">
+						<div class="content-landing__search">
+							<input type="text" class="input-search" placeholder="Search Your Travel Destination" required>
+							<button type="submit" class="btn ">search<i class="icon-scope"></i></button>
+						</div>
+					</form>
 					<div class="content-landing__text">
 						<p>Scroll Down</p>
 					</div>
@@ -33,10 +35,10 @@
 							<a href="#" class="header__logo">Bhromaon</a>
 							<nav class="menu__body" id="menu__body">
 								<ul class="menu__list">
-									<li class="menu__item"><a href="#" class="menu__link">Who We Are</a></li>
-									<li class="menu__item"><a href="#" class="menu__link">What We Do</a></li>
-									<li class="menu__item"><a href="#" class="menu__link">Travel With Us</a></li>
-									<li class="menu__item"><a href="#" class="menu__link">Who We Are</a></li>
+									<li class="menu__item"><a data-goto="#about" href="#" class="menu__link">Who We Are</a></li>
+									<li class="menu__item"><a data-goto="#actions" href="#" class="menu__link">What We Do</a></li>
+									<li class="menu__item"><a data-goto="#places" href="#" class="menu__link">Travel With Us</a></li>
+									<li class="menu__item"><a data-goto="#reviews" href="#" class="menu__link">Who We Are</a></li>
 								</ul>
 								<a href="#" class="header__logo menu-logo" id="menu-logo">Bhromaon</a>
 							</nav>
@@ -55,7 +57,7 @@
 					</div>
 				</header>
 			</section>
-			<section class="about">
+			<section id="about" class="about">
 				<div class="about__container">
 					<div class="about__row">
 						<div class="about__column about__column-text column-about">
@@ -83,7 +85,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="actions">
+			<section id="actions" class="actions">
 				<div class="actions__container">
 					<img src="img/icons/shape.png" alt="shape curve" class="actions__shape"></img>
 					<div class="actions__row">
@@ -114,7 +116,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="places">
+			<section id="places" class="places">
 				<div class="places__container">
 					<div class="places__column column-places">
 						<h3 class="column-places__country">
@@ -148,7 +150,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews page">
+			<section id="reviews" class="reviews page">
 				<div class="reviews__main">
 					<div class="reviews__container">
 						<div class="reviews__box box-reviews">
@@ -176,7 +178,7 @@
 				<footer class="footer">
 					<div class="footer__container">
 						<div class="footer__box">
-							<a href="#" class="footer__logo">Bhromaon</a>
+							<a data-goto="#landing" href="#" class="footer__logo menu__link">Bhromaon</a>
 							<p class="footer__text">Safe Travel Anywhere</p>
 							<nav class="footer__navigation navigation-footer">
 								<ul class="navigation-footer__list">
