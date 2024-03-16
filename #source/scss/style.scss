@@ -528,3 +528,83 @@ input:checked.menu__body{
 	margin-bottom: 45px;
   }
 }
+
+.places-two{
+	background: url(../../img/background/4.png) center / cover no-repeat;
+}
+.places__container-two{
+	align-items: flex-end;
+}
+
+//reviews====================================================================
+.reviews {
+	display: flex;
+	flex-direction: column;
+  &__main {
+	flex: 1 0 auto;
+	background: url('../../img/background/5.png') center / cover no-repeat;
+  }
+  &__container {
+	padding-top: clamp(1.875rem, 0.208rem + 8.33vw, 6.25rem); //100-30px
+	padding-bottom: clamp(1.875rem, 0.208rem + 8.33vw, 6.25rem); //100-30px
+  }
+  &__box {
+	padding-top: 28px;
+	padding-bottom: clamp(1.875rem, 0.208rem + 8.33vw, 6.25rem); //100-30px
+  }
+}
+.box-reviews {
+  &__title {
+	text-align: center;
+	margin-bottom: clamp(1.875rem, 0.446rem + 7.14vw, 5.625rem) //90-30px;
+  }
+  &__row {
+	display: flex;
+	@media screen and (max-width: 965px) {
+		margin: 0 auto;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		max-width: 445px;
+		gap: 10px;
+	}
+  }
+  &__media {
+	@media screen and (max-width: 965px){
+		position: relative;
+		img{
+			object-fit: contain;
+			height: 100%;
+			width: 100%;
+		}
+	}
+  }
+  &__review {
+	padding: 38px 25px 35px 60px;
+	background-color: #333333;
+	@media screen and (max-width: 1062px) {
+	   padding: 24px 20px 23px 50px;
+	}
+	@media screen and (max-width: 465px) {
+	   padding: 24px;
+	}
+  }
+}
+.review {
+  &__name {
+	font-size: 20px;
+	line-height: 1.3;
+	text-transform: uppercase;
+  }
+  &__text {
+	font-size: 16px;
+	line-height: 1.625;
+  }
+}
+.icon-quote-left{
+	display: inline-flex;
+	transform: translate(0, 7px);
+	font-size: 50px;
+	color: $darkBlue;
+	letter-spacing: 5px;
+}
