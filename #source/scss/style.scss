@@ -7,6 +7,9 @@
 $blue: #5474FD;
 $darkBlue: #496BFE;
 $gray: #232323; 
+
+
+
 //animation==========================================================================
 @keyframes moving {
 	0%{
@@ -14,6 +17,43 @@ $gray: #232323;
 	}
 	100%{
 		top: 40px;
+	}
+}
+
+//common styles========================================================================
+.button {
+	z-index: 2;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $blue;
+	height: 63px;
+	width: 228px;
+	font-family: "Aleo";
+	letter-spacing: 1.2px;
+	font-weight: 16px;
+	line-height: 1.625;
+	text-transform: uppercase;
+	color: #fff;
+	// overflow: hidden; open this if it's not allowing overflow hover effect on the button, but I like it so much 
+	&::before{
+		transition: all 0.5s ease-out 0s, border-right-width 0.5s ease-out 0.2s;
+		z-index: -1;
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-bottom: 63px solid $darkBlue;
+		border-left: 63px solid $darkBlue;
+		border-right: 53px solid transparent;
+		height: 0;
+	}
+	&:hover{
+		&::before{
+			border-left-width: 228px;
+			border-right-width: 0px;
+		}
 	}
 }
 //landing page==========================================================================
@@ -295,4 +335,96 @@ label:hover circle {
 
 input:checked.menu__body{
 		top: 0;
+}
+//about==============================================================================
+.about {
+	background: url(../../img/background/2.png) center / cover no-repeat;
+	height: 685px;
+		@media screen  and (max-width:745px){
+		height: 100%;
+		padding: 30px 0;
+	}
+  &__container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+  &__row {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	@media screen  and (max-width:745px){
+		display: block;
+		margin: 0 auto;
+	}
+}
+  &__column {}
+  &__column-text {
+	max-width: 560px;
+	width: 100%;
+	align-self: flex-end;
+	padding-bottom: 14px;
+	@media screen  and (max-width:745px){
+	margin-bottom: 40px;
+	}
+  }
+}
+.column-about {
+  &__title {
+	margin-bottom: 50px;
+	@media screen and (max-width: 500px){
+		margin-bottom: 25px;
+	}
+  }
+  &__text {
+	font-size: clamp(0.75rem, 0.655rem + 0.48vw, 1rem); //16-12px
+	letter-spacing: 1.6px;
+	line-height: 1.625;
+	font-weight: 400;
+	margin-bottom: 45px;
+	@media screen and (max-width: 500px){
+		margin-bottom: 25px;
+	}
+  }
+  &__text-margin {
+	margin-bottom: 40px;
+	@media screen and (max-width: 500px){
+		margin-bottom: 20px;
+	}
+  }
+  &__media {
+	min-width: 440px;
+	text-align: right;
+	@media screen and (max-width: 745px){
+		min-width: 100%;
+	}
+  }
+  &__img-one {
+	position: relative;
+	margin-bottom: 10px;
+	right: 90px;
+	@media screen and (max-width: 745px) {
+		min-width: 256px;
+		position: relative;
+		padding-bottom: 50%;
+		right: 0;
+		img{
+			position: absolute;
+			object-fit: contain;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: -27px;
+		}
+	}
+  }
+  &__img-two {
+	right: 0;
+	@extend .column-about__img-one;
+	margin-bottom: 0;
+	img{
+		left: 27px;
+	}
+  }
 }
