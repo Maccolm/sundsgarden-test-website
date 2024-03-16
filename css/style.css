@@ -618,3 +618,71 @@ input:checked.menu__body {
 .column-about__img-two img {
   left: 27px;
 }
+
+.actions {
+  background-color: #333333;
+  padding-top: clamp(1.25rem, -0.536rem + 8.93vw, 5.938rem);
+  padding-bottom: clamp(1.25rem, -0.179rem + 7.14vw, 5rem);
+}
+.actions__container {
+  position: relative;
+}
+.actions__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 35px;
+}
+@media screen and (max-width: 350px) {
+  .actions__row {
+    flex-direction: column;
+    align-self: center;
+  }
+}
+.actions__column {
+  padding: 19px 0;
+}
+
+.column-actions__img {
+  text-align: center;
+  margin-bottom: clamp(1.25rem, 0.774rem + 2.38vw, 2.5rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.column-actions__img::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 43px;
+  height: 100px;
+  width: 100px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+.column-actions__text {
+  text-align: center;
+  font-family: "Aleo";
+  font-size: clamp(1.313rem, 1.074rem + 1.19vw, 1.938rem);
+  font-weight: 400;
+}
+
+.actions__shape {
+  position: absolute;
+  top: -30%;
+  left: 16%;
+  width: 68%;
+}
+.actions__shape img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 950px) {
+  .actions__shape {
+    display: none;
+  }
+}
