@@ -686,3 +686,39 @@ input:checked.menu__body {
     display: none;
   }
 }
+
+.places {
+  background: url(../../img/background/3.png) center/cover no-repeat;
+}
+.places__container {
+  padding-bottom: 100px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.places__column {
+  background-color: rgba(35, 35, 35, 0.862745098);
+  max-width: 540px;
+  width: 100%;
+  padding: 50px 30px;
+}
+
+.column-places__country {
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+.column-places__title {
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin-bottom: 13px;
+}
+.column-places__text {
+  font-size: 16px;
+  line-height: 1.625;
+  margin-bottom: 45px;
+}

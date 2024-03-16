@@ -491,3 +491,40 @@ input:checked.menu__body{
 		display: none;
 	}
 }
+//places==========================================================================================
+.places {
+	background: url(../../img/background/3.png) center / cover no-repeat;
+  &__container {
+	padding-bottom: 100px;
+	height: 700px; //a guess here is exclusion about height
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+  }
+  &__column {
+	background-color: #232323dc;
+	max-width: 540px;
+	width: 100%;
+	padding: 50px 30px;
+  }
+}
+.column-places {
+  &__country {
+	font-size: 20px;
+	line-height: 1.3;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+	margin-bottom: 23px;
+}
+&__title {
+	text-transform: uppercase;
+	line-height: 1.3;
+	margin-bottom: 13px;
+  }
+  &__text {
+	font-size: 16px;
+	line-height: 1.625;
+	margin-bottom: 45px;
+  }
+}
