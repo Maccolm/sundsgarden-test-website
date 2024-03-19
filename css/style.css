@@ -134,8 +134,8 @@ h2 {
 
 @font-face {
   font-family: "icons";
-  src: url("../../fonts/icons.eot?48gjzo");
-  src: url("../../fonts/icons.eot?48gjzo#iefix") format("embedded-opentype"), url("../../fonts/icons.ttf?48gjzo") format("truetype"), url("../../fonts/icons.woff?48gjzo") format("woff"), url("../../fonts/icons.svg?48gjzo#icons") format("svg");
+  src: url("../fonts/icons.eot?48gjzo");
+  src: url("../fonts/icons.eot?48gjzo#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?48gjzo") format("truetype"), url("../fonts/icons.woff?48gjzo") format("woff"), url("../fonts/icons.svg?48gjzo#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -225,7 +225,7 @@ h2 {
 }
 
 .landing {
-  background: url("../../img/background/1.png") center/cover no-repeat;
+  background: url("../img/background/1.png") center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -353,6 +353,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .menu__body {
+	z-index: 5;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -510,7 +511,7 @@ input:checked.menu__body {
 }
 
 .about {
-  background: url(../../img/background/2.png) center/cover no-repeat;
+  background: url(../img/background/2.png) center/cover no-repeat;
   height: 685px;
 }
 @media screen and (max-width: 745px) {
@@ -684,7 +685,7 @@ input:checked.menu__body {
 }
 
 .places {
-  background: url(../../img/background/3.png) center/cover no-repeat;
+  background: url(../img/background/3.png) center/cover no-repeat;
 }
 .places__container {
   padding-bottom: 100px;
@@ -720,7 +721,7 @@ input:checked.menu__body {
 }
 
 .places-two {
-  background: url(../../img/background/4.png) center/cover no-repeat;
+  background: url(../img/background/4.png) center/cover no-repeat;
 }
 
 .places__container-two {
@@ -733,7 +734,7 @@ input:checked.menu__body {
 }
 .reviews__main {
   flex: 1 0 auto;
-  background: url("../../img/background/5.png") center/cover no-repeat;
+  background: url("../img/background/5.png") center/cover no-repeat;
 }
 .reviews__container {
   padding-top: clamp(1.875rem, 0.208rem + 8.33vw, 6.25rem);

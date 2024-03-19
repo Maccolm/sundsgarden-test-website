@@ -1,6 +1,7 @@
 const button = document.getElementById('checkbox')
 const menu = document.getElementById('menu__body')
 const logo = document.getElementById('menu-logo')
+const mainContainer = document.querySelector('.main')
 
 function switcherNavigation(){
 	if (button.checked) {
@@ -13,6 +14,14 @@ function switcherNavigation(){
 }
 
 button.addEventListener('change', switcherNavigation)
+
+//Добавляю слухач на контейнер, щоб визначити, що нажав не на іконку і закрити меню
+mainContainer.addEventListener('click', function(event) {
+	if (!button.contains(event.target)) {
+		menu.classList.remove('opened')
+		logo.classList.remove('opened')
+	}
+})
 
 //go-to============================================================
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
@@ -35,3 +44,4 @@ if (menuLinks.length > 0) {
 		}
 	}
 }
+//=============================================
