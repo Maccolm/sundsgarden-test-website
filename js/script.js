@@ -20,6 +20,7 @@ mainContainer.addEventListener('click', function(event) {
 	if (!button.contains(event.target)) {
 		menu.classList.remove('opened')
 		logo.classList.remove('opened')
+		button.checked = false
 	}
 })
 

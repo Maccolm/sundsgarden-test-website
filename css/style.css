@@ -433,6 +433,7 @@ input {
 }
 
 label {
+	z-index: 7;
   top: 0;
   right: 0;
   display: block;
