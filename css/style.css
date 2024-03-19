@@ -443,6 +443,11 @@ label {
   height: 80px;
   max-width: 150px;
 }
+.ckecked{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
 
 @media (min-aspect-ratio: 1/1) {
   label {

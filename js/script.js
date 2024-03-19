@@ -7,22 +7,26 @@ function switcherNavigation(){
 	if (button.checked) {
 			menu.classList.add('opened')
 			logo.classList.add('opened')
-	} else{
-		menu.classList.remove('opened')
-		logo.classList.remove('opened')
+			document.body.style.overflow = 'hidden'
+		mainContainer.addEventListener('click', closeIcon)
+		} else{
+			document.body.style.overflow = 'visible'
+			menu.classList.remove('opened')
+			logo.classList.remove('opened')
 	}
 }
 
 button.addEventListener('change', switcherNavigation)
 
 //Добавляю слухач на контейнер, щоб визначити, що нажав не на іконку і закрити меню
-mainContainer.addEventListener('click', function(event) {
-	if (!button.contains(event.target)) {
+function closeIcon(event) {
+	if (event.target.tagName === 'A') {
 		menu.classList.remove('opened')
 		logo.classList.remove('opened')
+		document.body.style.overflow = 'visible'
 		button.checked = false
 	}
-})
+}
 
 //go-to============================================================
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
